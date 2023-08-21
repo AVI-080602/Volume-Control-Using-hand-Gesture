@@ -60,7 +60,6 @@ while True:
         cv2.rectangle(img, (50, 150), (85, 400), (0, 0, 255),4)
         cv2.rectangle(img, (50, int(volbar)), (85, 400), (0, 0, 255), cv2.FILLED)
         cv2.putText(img, f"{int(volper)}%", (10, 40), cv2.FONT_ITALIC, 1, (0, 255, 98), 3)
-        cv2.imshow('Image', img)
     if cv2.waitKey(1) & 0xff == ord('q'):
         break
 
